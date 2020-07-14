@@ -107,8 +107,8 @@ def get_json(url, page, lang_name):
         info.append(i.get('salary', '无'))
         info.append(i.get('city', '无'))
         info.append(i.get('education', '无'))
-        info.append("".join(i.get('skillLables', '无')))
-        info.append("".join(i.get('positioinLables', '无')))
+        info.append(",".join(i.get('skillLables', '无')))
+        #info.append("".join(i.get('positioinLables', '无')))
         info_list.append(info)
     return info_list
 
